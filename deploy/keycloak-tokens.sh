@@ -3,8 +3,8 @@
 KCHOST=http://localhost:8081
 REALM=ok-cryptotrade
 CLIENT_ID=ok-cryptotrade-service
-UNAME=ok-cryptotrade-test
-PASSWORD=123
+UNAME=otus-test
+PASSWORD=otus
 
 # shellcheck disable=SC2006
 #ACCESS_TOKEN=`curl \

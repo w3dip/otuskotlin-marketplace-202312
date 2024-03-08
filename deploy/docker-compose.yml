@@ -89,7 +89,7 @@ services:
       - ./volumes/envoy/envoy.yaml:/etc/envoy/envoy.yaml  # Mount your Envoy configuration file
     #      - ./envoy/certs:/etc/envoy/certs  # Mount your TLS certificates
     ports:
-      - "15001:15001"
+      #  - "15001:15001"
       - "8090:8090"
 
   keycloak:
@@ -104,7 +104,7 @@ services:
     #      - ./keycloak/standalone.xml:/opt/jboss/keycloak/standalone/configuration/standalone.xml
     #      - ./keycloak/certs/keycloak.jks:/etc/x509/https/keystore  # Mount your Keycloak keystore
     environment:
-      KEYCLOAK_USER: otus
+      KEYCLOAK_USER: otus-test
       KEYCLOAK_PASSWORD: otus
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
