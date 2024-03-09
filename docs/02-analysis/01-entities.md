@@ -59,3 +59,10 @@
 
 Взаимосвязи между сущностями включают в себя создание пользователем ордеров, исполнение ордеров, обновление портфеля
 после этого, а также отображение актуальных котировок и графиков для помощи в принятии решений о торговле.
+
+## Функции (эндпониты)
+
+1. CRUDS (create, read, update, delete, search) для портфелей (Agreement)
+2. CRUDS (create, read, update, delete, search) для активов (Asset)
+3. CRUDS (create, read, update, delete, search) для ордеров (заявок) (Order)
+4. CRUDS (create, read, update, delete, search) для котировок (Quote)
