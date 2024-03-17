@@ -1,3 +1,5 @@
+package ru.otus.otuskotlin.crypto.trade.common
+
 import kotlinx.datetime.Instant
 import ru.otus.otuskotlin.crypto.trade.common.models.*
 import ru.otus.otuskotlin.crypto.trade.common.stubs.OrderStubs
