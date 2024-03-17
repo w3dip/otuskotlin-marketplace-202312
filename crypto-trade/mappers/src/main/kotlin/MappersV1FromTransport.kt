@@ -1,9 +1,9 @@
 package ru.otus.otuskotlin.crypto.trade.mappers
 
-import OrderContext
 import ru.otus.otuskotlin.crypto.trade.api.v1.models.*
 import ru.otus.otuskotlin.crypto.trade.api.v1.models.OrderSide.BUY
 import ru.otus.otuskotlin.crypto.trade.api.v1.models.OrderSide.SELL
+import ru.otus.otuskotlin.crypto.trade.common.OrderContext
 import ru.otus.otuskotlin.crypto.trade.common.models.*
 import ru.otus.otuskotlin.crypto.trade.common.models.OrderSide
 import ru.otus.otuskotlin.crypto.trade.common.stubs.OrderStubs

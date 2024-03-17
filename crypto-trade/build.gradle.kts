@@ -27,10 +27,17 @@ ext {
 }
 
 tasks {
-    arrayOf("build", "clean", "check").forEach { tsk ->
-        create(tsk) {
-            group = "build"
-            dependsOn(subprojects.map { it.getTasksByName(tsk, false) })
+    create("build") {
+        group = "build"
+        dependsOn(project(":app").getTasksByName("build", false))
+    }
+    create("check") {
+        group = "verification"
+        subprojects.forEach { proj ->
+            println("PROJ $proj")
+            proj.getTasksByName("check", false).also {
+                this@create.dependsOn(it)
+            }
         }
     }
 }
