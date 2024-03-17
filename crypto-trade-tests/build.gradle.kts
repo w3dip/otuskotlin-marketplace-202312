@@ -3,12 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.multiplatform) apply false
 }
 
-group = "ru.otus.otuskotlin.crypto.trade"
+group = "ru.otus.otuskotlin.crypto.trade.tests"
 version = "1.0.0"
-
-repositories {
-    mavenCentral()
-}
 
 allprojects {
     repositories {
